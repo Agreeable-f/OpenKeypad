@@ -1,3 +1,11 @@
+Print info/settings:
+     NOTE: LID MUST BE FLIPPED 180° ON THE X OR Y AXIS SUCH THAT IT LAYS FLAT.
+     All prototypes and models were printed on a prusa i3mk2s.
+     .2mm layer height with 3 top and bottom solid layers and 4 perimiter/shells.
+     first layer height is set to 200% with the first layer width at 100%
+     Infill was set to 100% With the rectelinear pattern. No supports needed!
+     more details in the simplify3d profile.
+
 Pins to solder to and how to change them:
 
           Solder your positive pins to 5 and 15 and the negative pins
