@@ -14,35 +14,31 @@ NOTE: LID MUST BE FLIPPED 180° ON THE X OR Y AXIS SUCH THAT IT LAYS FLAT.
 
 Pins to solder to and how to change them:
 
-          Solder your positive pins to 5 and 15 and the negative pins
-     to any of the  pins. When doing to ensure that none of the wire 
-     pokes out of the bottom of the board. 
-     (it is reccommended that you do this on a flat surface/soldering mat)
-     You can also solder both negative pins to one ground 
-     if you want, however both positive pins must be connected
-     to separate pins. you can also change what pins you'd like to solder to 
-     (with the exception of gnd) on lines 15-25. chose the corresponding pin
-     for the key you binded on lines 5-13 and un-comment them. Also remember to 
-     un-comment the pins on lines 61-69.
+          Solder your positive pins to 5 and 15 (or what they are defined to in the code)
+     and the negative pins to any of the GND pins. When doing to ensure that none of the wire 
+     pokes out of the bottom of the board. You can also solder both negative pins to one GND 
+     if you want, however both positive pins must be connected to separate pins. 
+     You can also change what pins you'd like to solder to (with the exception of GND) 
+     on lines 41-56. Un-comment the pin that you want to solder to/use 
+     (remove the // on the left) and change the binding on the left side in the empty ' '.
 
 How to solder and install Kailh hot swap sockets:
 
 NOTE:  THICK SIDE (LEFT) GOES TO GROUND AND SKINNY SIDE (RIGHT) GOES TO THE PINOUT (5, 15 EXT.)
 
-          Solder the wires to the defined pins in the code (default is 5 and 15) as well as the ground pins
+          Solder the wires to the defined pins in the code (default is 5 and 15) as well as the GND/ground pins
      (any will work) I used the pins that came with the board and used them as leads to solder to.
      Add a ball of solder to your iron and gently drop it into one of the two metal 
      bits on the side of the socket. If the peice melts the plastic and sags down, you
      can heat it and push it back up. To solder the wire hold the socket so that it's facing 
-     bottom up. solder the wire directly perpendicular to the socket such that it sticks straight 
+     bottom up. Solder the wire directly perpendicular to the socket such that it sticks straight 
      down (otherwise there will be spacing issues with the walls of the keypad). 
      
 How to change what keys you want bound:
 
-     On lines 5-13 in the code you can change each pin to a different letter 
-     however since there are only two buttons you should only need to change
-     the non commented lines (5 and 7). if you do change any of the other keys
-     make sure to un-comment the correct pins on lines 61-69. 
+     On lines 41-56 in the code you can change each pin to a different letter 
+     or modifier. To do this, simply add your key/letter in the empty ' ' on the 
+     corresponding line of the pin you have soldered to.
 
 How to install the Arduino Pro Micro:
      
@@ -61,9 +57,8 @@ How to upload code to the arduino:
 
 TLDR;/short and concise version:
 
-          Solder wires to pins 5 and 15 (default) and gnd/ground. If using hot swap sockets left is gnd.
-     to change the keys change the definitions on lines 5-13. To change the pins change the definitions
-     on lines 15-25 also uncomment the right pins on lines 61-69 (nice). to insert the arduino
+          Solder wires to pins 5 and 15 (default) and GND/ground. If using hot swap sockets left (thick side) is gnd.
+     To change the keys/pins change the definitions on lines 41-56. To insert the arduino
      line up the port with the hole and push it in and down. then upload the code and you're done.
 
 NOTE: You might have to glue the hot swap sockets down otherwise they might come out when removing the switch.
