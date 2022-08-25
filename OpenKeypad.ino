@@ -33,8 +33,6 @@ class button {
   unsigned long lastPressed;
   boolean pressed = 0;
 } ;
- 
-// ---------------------------------
 
 // Add buttons to this array, in the form { key, pin }
 button buttons[] = {
@@ -43,6 +41,10 @@ button buttons[] = {
   //{' ', 3},
   //{' ', 4},
   {'z', 5},
+  {'s', 5},
+  {'d', 15},
+  //{' ', 16},
+  //{' ', 5},
   //{' ', 6},
   //{' ', 7},
   //{' ', 8},
