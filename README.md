@@ -1,9 +1,10 @@
 # OpenKeypad
- An open source and fully customizable keypad for osu. (based on the arduino pro micro and it's atmega32u4 chip.)
+## What is it?
+ An open source and fully customizable keypad for osu. (based on the arduino pro micro and it's atmega32u4 chip.)  
 
-TLDR/shorter version and FAQ at the end:
+# General information stuff for how to do everything
 
-NOTE: You might have to glue the hotswap sockets down otherwise they might come out when removing the switch.
+## TLDR/shorter version and FAQ at the end:  
 
 # Print info/settings:
 
@@ -36,6 +37,8 @@ bits on the side of the socket. If the peice melts the plastic and sags down, yo
 can heat it and push it back up. To solder the wire hold the socket so that it's facing 
 bottom up. Solder the wire directly perpendicular to the socket such that it sticks straight 
 down (otherwise there will be spacing issues with the walls of the keypad). 
+
+### NOTE: You might have to glue the hotswap sockets down otherwise they might come out when removing the switch. Super glue woks well and is still somewhat removable.
      
 # How to change what keys you want bound:
 
@@ -49,14 +52,13 @@ If your board has a flange/lip around the port that will need to be clipped
 in order for it to fit into the hole. position the board such that the port 
 is alligned with the hole at a slight angle. Then push the port gently into the hole
 (may use pliars if necessary).once seated press the board down such that it sits in the
-lip/border to hold it in place.
+lip/border to hold it in place.  
+(If it doesn't get held in place or the border broke off somehow, you can glue it down or use a thin double sided tape.)
 
 # How to upload code to the arduino:
 
-Connect the arduino to your pc and make sure it shows up in device manager (as well as it's com port).
-select the correct com port (that you got from device manager) 
-and arduino leonardo in the tools drop down menu. Install all the required libraries. 
-Click the upload button and let it finish.
+Connect the arduino to your pc and select arduino leonardo in the tools drop down menu and install all the required libraries. 
+Make sure you selected the right COM port in the tools menu if it's not already selected. Click the upload button and let it finish.
 
 # TLDR;/short and concise version:
 
@@ -64,17 +66,14 @@ Solder wires to pins 5 and 15 (default) and GND/ground. If using hot swap socket
 To change the keys/pins change the definitions on lines 41-56. To insert the arduino
 line up the port with the hole and push it in and down. then upload the code and you're done.
 
-### NOTE: You might have to glue the hot swap sockets down otherwise they might come out when removing the switch.
-
-
 # FAQ:
 
-Q: do i have to upload the code every time i plug it in?
-A: Nope! this is a one time code upload
+Q: Do i have to upload the code every time i plug it in?  
+A: Nope! uploading code is a one time thing! (unless it gets updated or needs to be changed)
 
-Q: can i use this on other computers?
-A: Yes! as long as you set your binds correctly in osu!.
+Q: Can i use this on other computers?  
+A: Yes! Just remember to set your binds correctly in osu!.  
 
-Q: can i use any switch?
-A: Yes! all gateron style switches are compatible. 
-(if you are using v2.5 without hotswap socket support you may have to solder directly to the pins of the switch)
+Q: What switches can i use?
+A: Yes! all gateron style switches are compatible.  
+(if you are using v2.5 without hotswap socket support you may have to solder directly to the pins of the switch)  
