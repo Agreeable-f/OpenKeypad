@@ -74,6 +74,6 @@ A: Nope! uploading code is a one time thing! (unless it gets updated or needs to
 Q: Can i use this on other computers?  
 A: Yes! Just remember to set your binds correctly in osu!.  
 
-Q: What switches can i use?
-A: Yes! all gateron style switches are compatible.  
+Q: What switches can i use?  
+A: All gateron style switches are compatible.  
 (if you are using v2.5 without hotswap socket support you may have to solder directly to the pins of the switch)  
